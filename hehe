@@ -307,9 +307,9 @@ echo -e "\033[1;33m◇ MORE INFORMATION \033[1;31m(\033[1;36m◇ TELEGRAM\033[1;
 echo -e ""
 
 #Option to install udp-request script also
-read -p "Do you want to install UDP-REQUEST SCRIPT ? [ Yes( Y ) / No( N ) ]: " choice
+read -p "Do you want to install UDP-REQUEST SCRIPT ? ( Y / N ): " choice
 case "$choice" in
-  y|Y ) wget https://raw.githubusercontent.com/AVEGAH/SocksIP-udpServer/main/UDPserver.sh && chmod +x UDPserver.sh && ./UDPserver.sh;;
+  y|Y ) git clone https://github.com/AVEGAH/Udpcustom.git && cd Udpcustom && chmod +x install.sh && ./install.sh;;
   n|N ) echo "You chose not to install the script. Please enter 'menu' to access the SSH account.";;
   * ) echo "Invalid choice. Please enter 'Y' for Yes or 'N' for No.";;
 esac
