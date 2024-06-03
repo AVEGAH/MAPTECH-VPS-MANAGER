@@ -82,7 +82,7 @@ send_code_telegram() {
         echo -e "\033[1;31m  CODE SENT ALREADY! YOU HAVE $minutes MINUTES AND $seconds SECONDS LEFT TO REDEEM IT \033[0m"
         echo -e "\033[1;36m======================================================================================\033[0m"
         echo ""
-        echo -e "\033[1;32m              @wmaptechgh_bot  \033[0m on Telegram"
+        echo -e "\033[1;32m              t.me/wmaptechvpsscriptbot  \033[0m on Telegram"
         echo "" 
         echo -e "\033[1;36m======================================================================================\033[0m"
         echo ""
@@ -106,11 +106,11 @@ send_code_telegram() {
     echo -e "\033[1;31m       CONTACT TEAM MAPTECH FOR VERIFICATION CODE\033[0m"
     echo -e "\033[1;36m==============================================================\033[0m"
     echo ""
-    echo -e "\033[1;32m              @maptechgh_bot  \033[0m on Telegram"
+    echo -e "\033[1;32m          t.me/wmaptechvpsscriptbot  \033[0m on Telegram"
     echo "" 
     echo -e "\033[1;36m=============================================================\033[0m"
     echo ""
-    echo -e "\033[1;31m  Price is $1 & GH₵10 for the code with a validity period of 60 mins \033[0m"
+    echo -e "\033[1;31m  Message us for the code with a validity period of 60 mins \033[0m"
     echo ""
 }
 bot_tokens=("6803390472:AAEEX8hpTFhsxbmzU5oiZD4dYCOKxS4-lCE" "6385883860:AAHh-FUlhznqClppdunC2V2vinc298E17_E")
