@@ -279,9 +279,9 @@ sizemin=$(echo ${#username})
 	exit 1
 }
 sizemax=$(echo ${#username})
-[[ $sizemax -gt 10 ]] && {
+[[ $sizemax -gt 30 ]] && {
 	echo -e "\n${cor1}You entered a very large username"
-	echo -e "${cor1}use a maximum of 10 characters!${scor}\n"
+	echo -e "${cor1}use a maximum of 30 characters!${scor}\n"
 	exit 1
 }
 echo -ne "\033[1;32mPassword:\033[1;37m ";read password
