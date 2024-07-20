@@ -171,8 +171,8 @@ echo -e "\033[1;31m◇──────────ㅤ🌍 INSTALLING PACKAGES,
 echo ""
 
 # Function call for progress bar
-fun_bar 'apt update -y' 'apt upgrade -y'
-fun_bar 'apt install net-tools -y' 'apt install curl -y'
+fun_bar 'apt update' 'apt upgrade'
+fun_bar 'apt install net-tools' 'apt install curl'
 clear
 
 # Final message
