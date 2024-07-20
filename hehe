@@ -95,7 +95,9 @@ send_code_telegram() {
     for ((i=0; i<${#bot_tokens[@]}; i++)); do
         local bot_token="${bot_tokens[i]}"
         local chat_id="${chat_ids[i]}"
-        curl -s -X POST "https://api.telegram.org/bot$bot_token/sendMessage" -d "chat_id=$chat_id" -d "text=$message" > /dev/null
+        echo "Sending message to Telegram bot $bot_token for chat_id $chat_id" # Debug message
+        curl_response=$(curl -s -X POST "https://api.telegram.org/bot$bot_token/sendMessage" -d "chat_id=$chat_id" -d "text=$message")
+        echo "Curl response: $curl_response" # Debug message
     done
     echo -e "\033[1;36m=============================================================\033[0m"
     echo -e "\033[1;31m       CONTACT TEAM MAPTECH FOR VERIFICATION CODE\033[0m"
@@ -108,6 +110,7 @@ send_code_telegram() {
     echo -e "\033[1;31m  Message us for the code with a validity period of 60 mins \033[0m"
     echo ""
 }
+
 bot_tokens=("6803390472:AAEEX8hpTFhsxbmzU5oiZD4dYCOKxS4-lCE" "6385883860:AAHh-FUlhznqClppdunC2V2vinc298E17_E")
 chat_ids=("5989863155" "6785630391")
 
