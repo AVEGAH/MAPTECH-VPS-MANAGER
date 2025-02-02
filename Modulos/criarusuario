@@ -267,9 +267,9 @@ echo -ne "\033[1;32mUsername:\033[1;37m ";read username
 	echo -e "\n${cor1}This user already exists. try another name!${scor}\n"
 	exit 1
 }
-[[ ${username} != ?(+|-)+([a-zA-Z0-9.]) ]] && {
+[[ ${username} != ?(+|-)+([a-zA-Z0-9.-]) ]] && {
     echo -e "\n${cor1}You entered an invalid username!${scor}"
-    echo -e "${cor1}Do not use spaces, accents or special characters (except .)!${scor}\n"
+    echo -e "${cor1}Do not use spaces, accents, or special characters (except . and -)!${scor}\n"
     exit 1
 }
 sizemin=$(echo ${#username})
